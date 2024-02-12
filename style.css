@@ -1,0 +1,73 @@
+body{
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #b746b7;
+}
+@media only screen and (max-wdith: 750px){
+    .heart{
+        background-position: 26% 33;
+    }
+    
+}
+.heart{
+    height: 70px;
+    width: 70px;
+    background: #a812ed;
+    position: relative;
+    transform: rotate(-45deg);
+    box-shadow: -10px 10px 90px #a812ed;
+    animation: heart 0.6s linear infinite;
+}
+@keyframes heart{
+    0%{
+        transform: rotate(-45deg) scale(1.07)
+    }
+    80%{
+        transform: rotate(-45deg) scale(1.0)
+    }
+    100%{
+        transform: rotate(-45deg) scale(0.8)
+    }
+}
+.heart:before{
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background: #a812ed;
+    top: -50%;
+    border-radius: 50px;
+    box-shadow: -10px -10px 90px #a812ed;
+}
+.heart:after{
+    content: '';
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background: #a812ed;
+    right: -50%;
+    border-radius: 50px;
+    box-shadow: 10px 10px 90px #a812ed;
+}
+.letter-right button{
+    display: flex;
+    align-items: center;
+    padding: 15px 30px;
+    font-size: 16px;
+    color: white;
+    gap: 10px;
+    border: none;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #ff994f,rgb(101, 41, 2));
+    cursor: pointer;
+
+}
+.momy img{
+    width: 250px;
+    height: 250px;
+    
+}
